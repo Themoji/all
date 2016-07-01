@@ -30,8 +30,6 @@ GEM
     domain_name (0.5.20160615)
       unf (>= 0.0.5, < 1.0.0)
     dotenv (2.1.1)
-    emoji (1.0.6)
-      json
     excon (0.45.4)
     faraday (0.9.2)
       multipart-post (>= 1.2, < 3)
@@ -218,7 +216,6 @@ GEM
     terminal-table (1.4.5)
     thor (0.19.1)
     thread_safe (0.3.5)
-    ttfunk (1.4.0)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     uber (0.0.15)
@@ -243,12 +240,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  emoji
   fastlane
   fastlane-plugin-emoji_fetcher
   mini_magick
   rake
-  ttfunk (~> 1.4.0)
   unicode_utils
 
 BUNDLED WITH
