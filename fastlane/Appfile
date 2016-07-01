@@ -1,0 +1,2 @@
+app_identifier "me.themoji.rocket" # The bundle identifier of your app
+apple_id "apple@krausefx.com" # Your Apple email address

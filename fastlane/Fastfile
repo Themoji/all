@@ -1,0 +1,32 @@
+require "unicode_utils/char_name"
+
+lane :fetch_emojis do
+  emoji_fetcher(path: "./Themoji")
+end
+
+lane :appstore do |options|
+  emoji = options[:emoji] || "🚀"
+  emoji_name = UnicodeUtils.char_name(emoji).downcase
+  plist_path = "Themoji/App.plist"
+
+  ENV["EMOJI"] = emoji
+  ENV["EMOJI_NAME"] = emoji_name
+  set_info_plist_value(path: plist_path, key: "emoji", value: emoji)
+  set_info_plist_value(path: plist_path, key: "emoji_name", value: emoji_name)
+  
+  emoji_app_icon(emoji: emoji)
+
+  # gym
+end
+
+lane :all do
+  emojis.each do |current_emoji|
+    app_store(emoji: current_emoji)
+  end  
+end
+
+# Private lanes below
+
+private_lane :emojis do
+  ["🚀", "🎉"]
+end
