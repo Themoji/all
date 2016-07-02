@@ -4,7 +4,7 @@ lane :fetch_emojis do
   emoji_fetcher(path: "./Themoji")
 end
 
-lane :appstore do |options|
+lane :app_store do |options|
   emoji = options[:emoji] || "🚀"
   emoji_name = UnicodeUtils.char_name(emoji).downcase
   plist_path = "Themoji/App.plist"
