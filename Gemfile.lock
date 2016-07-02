@@ -40,7 +40,8 @@ GEM
       faraday (>= 0.7.4, < 0.10)
     fastimage (1.6.8)
       addressable (~> 2.3, >= 2.3.5)
-    fastlane (1.97.1)
+    fastlane (1.97.2)
+      activesupport (< 5)
       addressable (~> 2.3)
       bundler (~> 1.12)
       cert (>= 1.4.1, < 2.0.0)
@@ -202,7 +203,7 @@ GEM
       fastlane_core (>= 0.36.1, < 1.0.0)
       plist (~> 3.1.0)
       xcpretty (>= 0.2.1)
-    spaceship (0.27.2)
+    spaceship (0.28.0)
       colored
       credentials_manager (>= 0.9.0)
       faraday (~> 0.9)
@@ -243,7 +244,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  activesupport (< 5)
   fastlane
   fastlane-plugin-appicon
   fastlane-plugin-emoji_fetcher
