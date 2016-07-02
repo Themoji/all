@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A10A37DF1D27FBD100D8589E /* FontRendering.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10A37DE1D27FBD100D8589E /* FontRendering.swift */; };
 		F22454671D2576A800360D4D /* App.plist in Resources */ = {isa = PBXBuildFile; fileRef = F22454661D2576A800360D4D /* App.plist */; };
 		F22454691D257C8700360D4D /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22454681D257C8700360D4D /* App.swift */; };
-		F224546D1D2584A000360D4D /* FontRendering.m in Sources */ = {isa = PBXBuildFile; fileRef = F224546C1D2584A000360D4D /* FontRendering.m */; };
 		F224546F1D25876F00360D4D /* Apple Color Emoji.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F224546E1D2585AE00360D4D /* Apple Color Emoji.ttf */; };
 		F272711F1D255F7F000D3A6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F272711E1D255F7F000D3A6F /* AppDelegate.swift */; };
 		F27271211D255F7F000D3A6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27271201D255F7F000D3A6F /* ViewController.swift */; };
@@ -19,11 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A10A37DE1D27FBD100D8589E /* FontRendering.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontRendering.swift; sourceTree = "<group>"; };
 		F22454661D2576A800360D4D /* App.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = App.plist; sourceTree = "<group>"; };
 		F22454681D257C8700360D4D /* App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
-		F224546A1D2584A000360D4D /* Themoji-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Themoji-Bridging-Header.h"; sourceTree = "<group>"; };
-		F224546B1D2584A000360D4D /* FontRendering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontRendering.h; sourceTree = "<group>"; };
-		F224546C1D2584A000360D4D /* FontRendering.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontRendering.m; sourceTree = "<group>"; };
 		F224546E1D2585AE00360D4D /* Apple Color Emoji.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Apple Color Emoji.ttf"; sourceTree = "<group>"; };
 		F272711B1D255F7F000D3A6F /* themoji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = themoji.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F272711E1D255F7F000D3A6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,18 +62,16 @@
 		F272711D1D255F7F000D3A6F /* Themoji */ = {
 			isa = PBXGroup;
 			children = (
-				F224546E1D2585AE00360D4D /* Apple Color Emoji.ttf */,
-				F224546B1D2584A000360D4D /* FontRendering.h */,
-				F224546C1D2584A000360D4D /* FontRendering.m */,
-				F272711E1D255F7F000D3A6F /* AppDelegate.swift */,
-				F27271201D255F7F000D3A6F /* ViewController.swift */,
-				F27271221D255F7F000D3A6F /* Main.storyboard */,
-				F27271251D255F7F000D3A6F /* Assets.xcassets */,
-				F27271271D255F7F000D3A6F /* LaunchScreen.storyboard */,
-				F272712A1D255F7F000D3A6F /* Info.plist */,
 				F22454661D2576A800360D4D /* App.plist */,
 				F22454681D257C8700360D4D /* App.swift */,
-				F224546A1D2584A000360D4D /* Themoji-Bridging-Header.h */,
+				F272711E1D255F7F000D3A6F /* AppDelegate.swift */,
+				F224546E1D2585AE00360D4D /* Apple Color Emoji.ttf */,
+				F27271251D255F7F000D3A6F /* Assets.xcassets */,
+				A10A37DE1D27FBD100D8589E /* FontRendering.swift */,
+				F272712A1D255F7F000D3A6F /* Info.plist */,
+				F27271271D255F7F000D3A6F /* LaunchScreen.storyboard */,
+				F27271221D255F7F000D3A6F /* Main.storyboard */,
+				F27271201D255F7F000D3A6F /* ViewController.swift */,
 			);
 			path = Themoji;
 			sourceTree = "<group>";
@@ -107,7 +103,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Felix Krause";
 				TargetAttributes = {
 					F272711A1D255F7F000D3A6F = {
@@ -153,10 +149,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A10A37DF1D27FBD100D8589E /* FontRendering.swift in Sources */,
 				F27271211D255F7F000D3A6F /* ViewController.swift in Sources */,
 				F272711F1D255F7F000D3A6F /* AppDelegate.swift in Sources */,
 				F22454691D257C8700360D4D /* App.swift in Sources */,
-				F224546D1D2584A000360D4D /* FontRendering.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,8 +274,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "me.themoji.$(EMOJI_NAME_CLEAN)";
 				PRODUCT_NAME = "themoji$(EMOJI_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "Themoji/Themoji-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -294,7 +291,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "me.themoji.$(EMOJI_NAME_CLEAN)";
 				PRODUCT_NAME = "themoji$(EMOJI_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "Themoji/Themoji-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};

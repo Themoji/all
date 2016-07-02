@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.emojiLabel.font = FontRendering.highResolutionEmojiUIFontSize(300)
+        self.emojiLabel.font = FontRendering().highResolutionEmojiUI(300)
         self.emojiLabel.text = App.content()["emoji"] as? String
     }
 }
