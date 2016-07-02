@@ -10,9 +10,9 @@ sudo gem install fastlane
 fastlane fetch_emojis
 ```
 
-### appstore
+### app_store
 ```
-fastlane appstore
+fastlane app_store
 ```
 
 ### all
