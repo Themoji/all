@@ -4,7 +4,7 @@ lane :fetch_emojis do
   emoji_fetcher(path: "./Themoji")
 end
 
-lane :appstore do |options|
+lane :app_store do |options|
   emoji = options[:emoji] || "😴"
   emoji_name = UnicodeUtils.char_name(emoji).downcase
   emoji_name_clean = emoji_name.gsub(" ", "-")
@@ -17,6 +17,8 @@ lane :appstore do |options|
   set_info_plist_value(path: plist_path, key: "emoji_name", value: emoji_name)
   
   # emoji_app_icon(emoji: emoji)
+  appicon(appicon_image_file: 'Themoji/TemplateAppIcon.png', 
+    appicon_path: 'Themoji/Assets.xcassets', appicon_devices: [:iphone, :ipad])
 
   produce(app_name: emoji_name, sku: emoji_name_clean)
   match
@@ -25,7 +27,7 @@ end
 
 lane :all do
   emojis.each do |current_emoji|
-    appstore(emoji: current_emoji)
+    app_store(emoji: current_emoji)
   end  
 end
 

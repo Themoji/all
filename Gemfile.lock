@@ -1,10 +1,11 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (5.0.0)
-      concurrent-ruby (~> 1.0, >= 1.0.2)
+    activesupport (4.2.6)
       i18n (~> 0.7)
+      json (~> 1.7, >= 1.7.7)
       minitest (~> 5.1)
+      thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     addressable (2.4.0)
     babosa (1.0.2)
@@ -15,7 +16,6 @@ GEM
     colored (1.2)
     commander (4.3.5)
       highline (~> 1.7.2)
-    concurrent-ruby (1.0.2)
     credentials_manager (0.16.0)
       colored
       commander (>= 4.3.5)
@@ -40,7 +40,7 @@ GEM
       faraday (>= 0.7.4, < 0.10)
     fastimage (1.6.8)
       addressable (~> 2.3, >= 2.3.5)
-    fastlane (1.97.0)
+    fastlane (1.97.1)
       addressable (~> 2.3)
       bundler (~> 1.12)
       cert (>= 1.4.1, < 2.0.0)
@@ -69,6 +69,9 @@ GEM
       xcode-install (~> 1.4.0)
       xcodeproj (>= 0.20, < 2.0.0)
       xcpretty (>= 0.2.1)
+    fastlane-plugin-appicon (0.2.0)
+      json
+      mini_magick (~> 4.5.1)
     fastlane-plugin-emoji_fetcher (0.1.1)
     fastlane_core (0.48.1)
       babosa
@@ -240,7 +243,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activesupport (< 5)
   fastlane
+  fastlane-plugin-appicon
   fastlane-plugin-emoji_fetcher
   mini_magick
   rake
