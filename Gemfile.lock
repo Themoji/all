@@ -70,7 +70,7 @@ GEM
       xcode-install (~> 1.4.0)
       xcodeproj (>= 0.20, < 2.0.0)
       xcpretty (>= 0.2.1)
-    fastlane-plugin-appicon (0.2.0)
+    fastlane-plugin-appicon (0.3.0)
       json
       mini_magick (~> 4.5.1)
     fastlane-plugin-emoji_fetcher (0.1.1)
