@@ -34,6 +34,7 @@ lane :app_store do |options|
     keywords: { 'en-US' => "Themoji, Emoji, #{emoji_name}, #{emoji_name_clean}, lol" },
     description: { 'en-US' => File.read("description.txt").gsub("[[EMOJI]]", emoji_name) }
   )
+  clean_build_artifacts
 end
 
 lane :all do
