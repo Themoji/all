@@ -18,7 +18,8 @@ lane :app_store do |options|
   
   # emoji_app_icon(emoji: emoji)
   appicon(appicon_image_file: 'Themoji/TemplateAppIcon.png', 
-    appicon_path: 'Themoji/Assets.xcassets', appicon_devices: [:iphone, :ipad])
+          appicon_path: 'Themoji/Assets.xcassets', 
+          appicon_devices: [:iphone, :ipad])
 
   produce(app_name: emoji_name, sku: emoji_name_clean)
   match
