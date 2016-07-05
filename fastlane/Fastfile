@@ -16,20 +16,28 @@ lane :app_store do |options|
   set_info_plist_value(path: plist_path, key: "emoji", value: emoji)
   set_info_plist_value(path: plist_path, key: "emoji_name", value: emoji_name)
   
-  # emoji_app_icon(emoji: emoji)
+  # emoji_app_icon(emoji: emoji) # TODO
   appicon(appicon_image_file: 'Themoji/TemplateAppIcon.png', 
           appicon_path: 'Themoji/Assets.xcassets', 
           appicon_devices: [:iphone, :ipad])
 
+  snapshot
+
   produce(app_name: emoji_name, sku: emoji_name_clean)
   match
   gym
+
+  deliver(
+    name: { 'en-US' => "Themoji #{emoji_name}" },
+    keywords: { 'en-US' => ["Themoji", "Emoji", emoji_name, emoji_name_clean] },
+    description: { 'en-US' => File.read("description.txt").gsub("[[EMOJI]]", emoji_name) }
+  )
 end
 
 lane :all do
   emojis.each do |current_emoji|
     app_store(emoji: current_emoji)
-  end  
+  end
 end
 
 # Private lanes below

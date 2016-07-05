@@ -1,0 +1,21 @@
+app_icon "Themoji/TemplateAppIcon.png"
+price_tier 0
+copyright "2016 Felix Krause"
+automatic_release true
+app_rating_config_path "fastlane/app_rating.json"
+
+themoji_url = { "en-US" => "https://themoji.me" }
+privacy_url themoji_url
+support_url themoji_url
+marketing_url themoji_url
+
+primary_category "Utilities"
+secondary_category "Lifestyle"
+force true # no HTML report
+
+app_review_information(
+  first_name: "Felix",
+  last_name: "Krause",
+  email_address: "apple@krausefx.com",
+  phone_number: "+44 444 444 4444" # this is required for some reason
+)
