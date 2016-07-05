@@ -29,7 +29,7 @@ lane :app_store do |options|
 
   deliver(
     name: { 'en-US' => "Themoji #{emoji_name}" },
-    keywords: { 'en-US' => ["Themoji", "Emoji", emoji_name, emoji_name_clean] },
+    keywords: { 'en-US' => "Themoji, Emoji, #{emoji_name}, #{emoji_name_clean}, lol" },
     description: { 'en-US' => File.read("description.txt").gsub("[[EMOJI]]", emoji_name) }
   )
 end
