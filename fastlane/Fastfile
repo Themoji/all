@@ -9,6 +9,7 @@ lane :app_store do |options|
   emoji_name = UnicodeUtils.char_name(emoji).downcase
   emoji_name_clean = emoji_name.gsub(" ", "-")
   plist_path = "Themoji/App.plist"
+  version = "1.0"
 
   ENV["EMOJI"] = emoji
   ENV["EMOJI_NAME"] = emoji_name
@@ -27,6 +28,7 @@ lane :app_store do |options|
   match
   gym
 
+  add_git_tag(tag: ["themoji", emoji_name_clean, version])
   deliver(
     name: { 'en-US' => "Themoji #{emoji_name}" },
     keywords: { 'en-US' => "Themoji, Emoji, #{emoji_name}, #{emoji_name_clean}, lol" },
