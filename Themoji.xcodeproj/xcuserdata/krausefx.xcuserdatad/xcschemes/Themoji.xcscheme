@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F272711A1D255F7F000D3A6F"
-               BuildableName = "Themoji.app"
+               BuildableName = "themoji-.app"
                BlueprintName = "Themoji"
                ReferencedContainer = "container:Themoji.xcodeproj">
             </BuildableReference>
@@ -28,12 +28,22 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F28705A31D2C19B6006BA0BA"
+               BuildableName = "Themoji-UITests.xctest"
+               BlueprintName = "Themoji-UITests"
+               ReferencedContainer = "container:Themoji.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F272711A1D255F7F000D3A6F"
-            BuildableName = "Themoji.app"
+            BuildableName = "themoji-.app"
             BlueprintName = "Themoji"
             ReferencedContainer = "container:Themoji.xcodeproj">
          </BuildableReference>
@@ -56,7 +66,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F272711A1D255F7F000D3A6F"
-            BuildableName = "Themoji.app"
+            BuildableName = "themoji-.app"
             BlueprintName = "Themoji"
             ReferencedContainer = "container:Themoji.xcodeproj">
          </BuildableReference>
@@ -75,7 +85,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F272711A1D255F7F000D3A6F"
-            BuildableName = "Themoji.app"
+            BuildableName = "themoji-.app"
             BlueprintName = "Themoji"
             ReferencedContainer = "container:Themoji.xcodeproj">
          </BuildableReference>
