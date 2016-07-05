@@ -28,7 +28,7 @@ lane :app_store do |options|
   match
   gym
 
-  add_git_tag(tag: ["themoji", emoji_name_clean, version])
+  add_git_tag(tag: ["themoji", emoji_name_clean, version].join("-"))
   deliver(
     name: { 'en-US' => "Themoji #{emoji_name}" },
     keywords: { 'en-US' => "Themoji, Emoji, #{emoji_name}, #{emoji_name_clean}, lol" },
