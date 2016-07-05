@@ -16,6 +16,6 @@ class FontRendering {
 
     func highResolutionEmojiUI(fontSize: CGFloat) -> UIFont {
         let font = CGFontCreateWithDataProvider(CGDataProviderCreateWithCFData(rawFile)!)
-        return CTFontCreateWithGraphicsFont(font, fontSize, nil, nil)
+        return CTFontCreateWithGraphicsFont(font!, fontSize, nil, nil)
     }
 }
