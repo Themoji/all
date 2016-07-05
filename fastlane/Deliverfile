@@ -17,5 +17,5 @@ app_review_information(
   first_name: "Felix",
   last_name: "Krause",
   email_address: "apple@krausefx.com",
-  phone_number: "+44 444 444 4444" # this is required for some reason
+  phone_number: "+44 844 209 0611" # this is required for some reason
 )
